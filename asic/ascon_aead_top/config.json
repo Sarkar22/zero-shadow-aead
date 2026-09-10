@@ -1,0 +1,5 @@
+{ "DESIGN_NAME": "ascon_aead_top", "VERILOG_FILES": "dir::src/*.sv",
+  "CLOCK_PERIOD": 20, "CLOCK_PORT": "clk", "CLOCK_NET": "ref::$CLOCK_PORT",
+  "FP_SIZING": "absolute", "DIE_AREA": "0 0 900 900",
+  "FP_PDN_VOFFSET": 7, "FP_PDN_HOFFSET": 7, "FP_PDN_SKIPTRIM": true,
+  "pdk::sky130*": { "scl::sky130_fd_sc_hd": { "CLOCK_PERIOD": 20 } } }
