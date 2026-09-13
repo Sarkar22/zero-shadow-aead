@@ -71,12 +71,12 @@ for M in (1, 2, 4, 8, 16, 32, 64, 128):
     cells = []
     for t in shadows:
         R = min_R(M, t)
-        cells.append(str(R) if R else r"\textemdash")
+        cells.append(str(R) if R else "none")
     body += r"%d (%d\,B) & %s\\" % (M, M * RATE_B, " & ".join(cells)) + "\n"
 T.append(r"""\begin{table}[tb]\centering\setlength{\tabcolsep}{5pt}\footnotesize
 \caption{Smallest engine (rounds per cycle) that keeps authenticated encryption invisible,
-by record size and available shadow $T$ in cycles. A dash means no engine up to 12
-rounds per cycle suffices.}
+by record size and available shadow $T$ in cycles. An entry of ``none'' means no
+engine up to 12 rounds per cycle suffices.}
 \label{tab:frontier}
 \begin{tabular}{lrrrr}
 \toprule
