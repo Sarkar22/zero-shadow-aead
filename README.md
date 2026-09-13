@@ -40,7 +40,7 @@ reported numbers were produced with.
 | tool | used | purpose |
 |---|---|---|
 | Icarus Verilog | 12.0 | simulation (`iverilog -g2012`) |
-| Python 3 | 3.12 + numpy | golden models and analysis |
+| Python 3 | 3.12 + numpy (matplotlib for figures) | golden models and analysis |
 | AMD Vivado | 2024.2 | FPGA synthesis and place-and-route |
 
 ## Layout
